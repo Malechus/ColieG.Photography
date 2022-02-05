@@ -1,0 +1,85 @@
+﻿<div class="bg-dark main-text">
+      <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="~/images/ss1.jpg" style="height: 400px; display: block; margin-left: auto; margin-right: auto;" >
+    
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="~/images/ss4.jpg" style="height: 400px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="~/images/ss3.jpg" style="height: 400px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="~/images/ss2.jpg" style="height: 400px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="~/images/ss5.jpg" style="height: 400px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <!-- Next and previous buttons 
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</div>
+
+<div class="main-text bg-dark">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet, urna vitae viverra lobortis, mauris augue gravida nulla, ut consectetur metus sem a erat. Quisque eu mauris porttitor ante commodo semper. Pellentesque egestas elit non orci ultrices hendrerit. Donec et pellentesque est, vel sodales velit. Phasellus pulvinar tempor gravida. Nulla facilisi. Suspendisse at aliquam nisi, nec accumsan arcu.</p>
+
+    <p>Nulla finibus molestie rutrum. Pellentesque in lectus fringilla, fringilla dolor sed, condimentum tortor. Nunc interdum lectus ut viverra facilisis. In dictum tempus arcu nec vehicula. Fusce non dignissim sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ante tortor, fermentum eu eros vitae, ultricies aliquet est. Morbi sit amet sem euismod, aliquet justo quis, ultrices turpis. Nulla ut justo sapien. Duis accumsan ligula et diam congue ullamcorper. Pellentesque tempor mauris at nisl placerat, et molestie ipsum aliquam. Mauris lorem nisl, finibus et malesuada ac, congue a arcu. Cras rutrum lorem eget blandit efficitur. Sed in lacus libero. Donec mollis felis et accumsan ultrices.</p>
+
+    <p>Mauris quis nisi at mauris convallis mollis. Pellentesque aliquam elementum dolor. Suspendisse congue sagittis dolor. Phasellus quis massa tellus. Morbi velit ligula, efficitur nec elit a, elementum maximus turpis. Aenean eu luctus lacus. Nunc lobortis rhoncus orci, vel pellentesque tortor finibus at. Nunc cursus metus vitae turpis aliquet mollis. Aliquam bibendum non ipsum eu ultricies. Fusce vel semper ex. In sit amet leo nec tortor accumsan iaculis eu et neque. Maecenas lorem justo, sagittis vel augue sit amet, placerat rhoncus mauris. Curabitur at mauris non magna convallis maximus. Cras vitae dolor dapibus, vehicula nunc vel, vehicula mi.</p>
+
+    <p>Aenean ut bibendum urna. Ut faucibus, purus non sagittis ornare, diam tellus luctus sem, eget ultrices ligula arcu in nisl. Morbi tellus sapien, porttitor ut lacus nec, faucibus aliquam orci. Etiam ac hendrerit est. Integer malesuada orci eu urna scelerisque, ac varius orci pulvinar. Nunc commodo fringilla suscipit. Mauris ullamcorper nisl a mauris pretium, eget sagittis massa tincidunt. Nam posuere orci eget nunc fringilla, sed viverra erat imperdiet. Sed mi metus, imperdiet ac sem id, hendrerit condimentum justo. Sed eu dui euismod, pellentesque dui sed, pretium nisl. Duis ut mattis enim, ac semper ipsum. Sed suscipit eget metus ut aliquet. Nullam a tristique felis, at scelerisque mi. Vivamus ut eros mattis, pulvinar purus vel, fringilla urna.</p>
+
+    <p>In convallis tincidunt hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed aliquet erat id leo ornare sollicitudin. Nullam erat nisl, placerat nec dictum eget, euismod quis nibh. Nam sit amet nunc auctor, ultricies ex eu, lobortis dui. Nullam finibus leo tortor, ut condimentum tellus interdum eu. Sed vestibulum dignissim elit, ut egestas ligula mattis a. Proin lacinia ex metus, sed condimentum orci semper eget. Sed ut dolor dui. Sed scelerisque sollicitudin cursus. Nullam tristique nibh sit amet feugiat placerat. Aliquam aliquam ut tellus ultricies elementum. Phasellus fringilla erat sit amet lorem convallis blandit. Nulla porta, tortor quis laoreet vestibulum, ipsum magna vulputate orci, id porta turpis ante nec est.</p>
+
+</div>
+
+<script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000);
+    }
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n - 1);
+    }
+</script>
