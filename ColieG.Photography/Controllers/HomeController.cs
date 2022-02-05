@@ -83,7 +83,7 @@ namespace ColieG.Photography.Controllers
                     "<hr />" +
                     "<p>This is an automatically generated email sent by your webmaster. You can reply if you need assistance.";
 
-                using (SmtpClient client = new SmtpClient("smtp.gmail.com"))
+                using (SmtpClient client = new SmtpClient("localhost:587"))
                 {
 
                     client.Send(message);
